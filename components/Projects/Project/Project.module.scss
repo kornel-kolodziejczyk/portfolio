@@ -1,0 +1,40 @@
+@use "variables" as *;
+
+.project {
+  background-color: $color-grey-lighter;
+  box-shadow: $shadow-dark;
+  text-align: center;
+}
+
+.image {
+  padding: $size-3;
+  img {
+    object-fit: cover;
+  }
+}
+
+.content {
+  padding: $size-4;
+
+  h3 {
+    font-size: $size-5;
+    margin: $size-2 0;
+  }
+}
+
+.links {
+  justify-content: center;
+  display: flex;
+  gap: $size-5;
+  font-size: $size-7;
+}
+
+.tags {
+  justify-content: center;
+  gap: $size-4;
+  font-weight: 900;
+  display: flex;
+  padding-top: $size-6;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+}

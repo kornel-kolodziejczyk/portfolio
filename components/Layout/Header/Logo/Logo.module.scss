@@ -1,0 +1,12 @@
+@use "/styles/abstracts" as *;
+
+.logo {
+  color: $color-logo;
+  font-family: $font-logo;
+  font-size: $size-7;
+  font-weight: 700;
+  
+  @include breakpoint(lg) {
+    font-size: $size-8;
+  }
+}

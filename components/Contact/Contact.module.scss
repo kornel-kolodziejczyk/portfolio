@@ -1,0 +1,11 @@
+@use "/styles/abstracts" as *;
+
+.contact {
+  margin: 0 auto;
+  max-width: 50rem;
+  text-align: center;
+
+  h2 {
+    @include header;
+  }
+}

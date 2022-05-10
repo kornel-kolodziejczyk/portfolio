@@ -1,0 +1,22 @@
+@use "/styles/abstracts" as *;
+
+.notification {
+  background-color: $color-white;
+  font-size: $size-5;
+  font-weight: 600;
+  margin-bottom: $size-5;
+}
+
+.success {
+  box-shadow: $shadow-green;
+  color: $color-green;
+  padding: $size-2;
+  text-align: center;
+}
+
+.error {
+  box-shadow: $shadow-red;
+  color: $color-red;
+  padding: $size-2;
+  text-align: center;
+}

@@ -1,0 +1,18 @@
+@use "/styles/abstracts" as *;
+
+.projects {
+  display: grid;
+  gap: $size-4;
+  grid-template-columns: 1fr;
+  list-style: none;
+  margin-bottom: $size-10;
+  padding: 0;
+
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

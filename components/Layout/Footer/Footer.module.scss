@@ -1,0 +1,45 @@
+@use "/styles/abstracts" as *;
+
+.footer {
+  background-color: $color-hero;
+  color: $color-footer;
+  font-size: $size-4;
+  margin-top: $size-16;
+  padding: $size-6 0;
+  word-break: break-word;
+}
+
+.content {
+  display: grid;
+  font-size: $size-3;
+  gap: $size-4;
+  justify-content: center;
+  text-align: center;
+
+  @include breakpoint(325px) {
+    font-size: $size-4;
+  }
+
+  @include breakpoint(600px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contact {
+  display: grid;
+  gap: $size-4;
+  justify-content: center;
+
+  @include breakpoint(600px) {
+    justify-items: start;
+  }
+}
+
+.email,
+.phone {
+  align-items: center;
+  display: flex;
+  gap: $size-3;
+  justify-content: center;
+}

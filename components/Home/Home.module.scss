@@ -1,0 +1,9 @@
+@use "/styles/abstracts" as *;
+
+.projects {
+  text-align: center;
+
+  h2 {
+    @include header;
+  }
+}

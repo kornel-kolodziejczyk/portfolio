@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Rasa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+// Sizes
+$size-0: 0.125rem;
+$size-1: 0.25rem;
+$size-2: 0.5rem;
+$size-3: 0.75rem;
+$size-4: 1rem;
+$size-5: 1.25rem;
+$size-6: 1.5rem;
+$size-7: 1.75rem;
+$size-8: 2rem;
+$size-9: 2.25rem;
+$size-10: 2.5rem;
+$size-11: 2.75rem;
+$size-12: 3rem;
+$size-13: 3.25rem;
+$size-14: 3.5rem;
+$size-15: 3.75rem;
+$size-16: 4rem;
+$size-17: 4.25rem;
+$size-18: 4.5rem;
+$size-19: 4.75rem;
+$size-20: 5rem;
+
+// Colors
+$color-black: rgb(0, 0, 0);
+$color-border: rgb(204, 204, 204);
+$color-footer: rgb(134, 142, 150);
+$color-green-darker: rgb(28, 180, 135);
+$color-green-lighter: rgb(32, 201, 151);
+$color-green: #008000;
+$color-grey-lighter: rgb(233, 236, 239);
+$color-grey: rgb(134, 142, 150);
+$color-hero: rgb(33, 37, 41);
+$color-logo: rgb(22 24 26);
+$color-red: #ff0000;
+$color-text: rgb(52, 48, 54);
+$color-white: rgb(255, 255, 255);
+
+// Fonts
+$font-logo: "Oswald", sans-serif;
+$font-rasa: "Rasa", serif;
+
+// Layers
+$z-index-overlay: 1;
+$z-index-drawer: 2;
+$z-index-loader: 3;
+
+// Shadows
+$shadow-dark: 0 1px 4px rgba(0, 0, 0, 0.2);
+$shadow-green: 0 0 1px 0 $color-green;
+$shadow-red: 0 0 1px 0 $color-red;

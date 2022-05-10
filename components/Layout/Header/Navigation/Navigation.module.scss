@@ -1,0 +1,55 @@
+@use "/styles/abstracts" as *;
+
+.navigation {
+  ul {
+    align-items: baseline;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @include breakpoint(md) {
+      display: flex;
+      gap: $size-8;
+    }
+
+    @include breakpoint(lg) {
+      gap: $size-12;
+    }
+
+    li {
+      a {
+        color: $color-grey;
+      }
+
+      &:last-of-type {
+        background-color: $color-green-lighter;
+        cursor: pointer;
+        transition: background-color 0.2s;
+
+        &:hover {
+          background-color: $color-green-darker;
+        }
+
+        a,
+        span {
+          color: $color-white;
+          display: block;
+          padding: $size-1 $size-6 $size-2;
+        }
+      }
+    }
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    font-size: $size-8;
+
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+}

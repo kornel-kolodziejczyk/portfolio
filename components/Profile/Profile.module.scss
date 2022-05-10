@@ -1,0 +1,11 @@
+@use "/styles/abstracts" as *;
+
+.profile {
+  margin: auto;
+  max-width: 40rem;
+  text-align: center;
+
+  h2 {
+    @include header;
+  }
+}

@@ -1,0 +1,53 @@
+@use "/styles/abstracts" as *;
+
+.route {
+  background-color: $color-hero;
+  margin-bottom: $size-20;
+  padding: 30px 20px;
+
+  @include breakpoint(sm) {
+    padding: 40px 20px;
+  }
+
+  @include breakpoint(md) {
+    padding: 50px 20px;
+  }
+
+  @include breakpoint(lg) {
+    padding: 60px 20px;
+  }
+
+  h1 {
+    color: $color-green-lighter;
+    font-family: $font-rasa;
+    font-size: $size-9;
+    font-weight: 500;
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  ul {
+    align-items: center;
+    color: $color-footer;
+    display: flex;
+    gap: $size-5;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      align-items: center;
+      display: flex;
+      gap: $size-5;
+      text-transform: capitalize;
+
+      a {
+        transition: color 0.2s;
+
+        &:hover {
+          color: $color-green-darker;
+        }
+      }
+    }
+  }
+}

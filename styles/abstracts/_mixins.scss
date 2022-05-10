@@ -1,0 +1,48 @@
+@use "variables" as *;
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media ( min-width: #{ map-get( $breakpoints, $breakpoint ) } ) {
+      @content;
+    }
+  } @else if type_of($breakpoint) == number and unit($breakpoint) == px or unit($breakpoint) == em or unit($breakpoint) == rem {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`.";
+  }
+}
+
+@mixin header {
+  color: $color-text;
+  display: inline-block;
+  font-family: $font-rasa;
+  justify-self: center;
+  margin: 0 0 $size-12;
+  position: relative;
+  font-size: $size-6;
+
+  @include breakpoint(325px) {
+    font-size: $size-8;
+  }
+
+  &::after {
+    border-top: 1px solid $color-black;
+    bottom: -5px;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 60%;
+  }
+}

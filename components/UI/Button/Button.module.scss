@@ -1,0 +1,21 @@
+@use "/styles/abstracts" as *;
+
+.button {
+  background-color: $color-green-lighter;
+  border: none;
+  color: $color-white;
+  cursor: pointer;
+  font-size: $size-4;
+  justify-self: end;
+  padding: $size-3 $size-4;
+  transition: background-color 0.2s;
+  width: 100%;
+
+  &:hover {
+    background-color: $color-green-darker;
+  }
+
+  @include breakpoint(325px) {
+    width: auto;
+  }
+}

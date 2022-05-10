@@ -1,0 +1,106 @@
+@use "/styles/abstracts" as *;
+
+.hero {
+  background-color: $color-hero;
+  margin-bottom: $size-18;
+  padding: $size-8 0;
+  text-align: center;
+}
+
+.content {
+  align-items: center;
+  display: grid;
+  gap: $size-8;
+  justify-items: center;
+  margin: auto;
+}
+
+.image {
+  border-radius: 50%;
+  border: 5px solid $color-green-lighter;
+  height: 150px;
+  overflow: hidden;
+  width: 150px;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+  }
+}
+
+.author {
+  text-align: center;
+
+  h1 {
+    color: $color-green-lighter;
+    font-family: $font-rasa;
+    font-size: $size-12;
+    font-weight: 400;
+    margin: 0;
+    word-break: break-word;
+  }
+
+  p {
+    color: $color-grey;
+    font-size: $size-3;
+    margin: 0;
+    max-width: 40rem;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.about {
+  color: $color-white;
+  p {
+    line-height: $size-8;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.socials {
+  color: $color-white;
+  display: flex;
+  font-size: $size-5;
+  gap: $size-4;
+  justify-content: center;
+  padding-top: $size-4;
+}
+
+@include breakpoint(400px) {
+  .author {
+    h1 {
+      font-size: $size-16;
+    }
+    p {
+      font-size: $size-4;
+    }
+  }
+
+  .image {
+    height: 200px;
+    width: 200px;
+  }
+
+  .socials {
+    font-size: $size-6;
+  }
+}
+
+@include breakpoint(lg) {
+  .content {
+    grid-template-columns: auto 35% auto;
+    justify-content: space-between;
+
+    p {
+      text-align: left;
+    }
+  }
+
+  .socials {
+    justify-content: start;
+  }
+}
