@@ -5,6 +5,6 @@ image: squash.jpeg
 demo: "https://chelmskaligasquasha.com/"
 github: "https://github.com/kornel-kolodziejczyk/squash"
 tags: ["react", "node", "express", mongodb, "redux"]
-excerpt: Website created for the Chełm squash league.
+excerpt: Website created for the Chełm's squash league.
 isFeatured: true
 ---

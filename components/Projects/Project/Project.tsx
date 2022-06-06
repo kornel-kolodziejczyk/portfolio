@@ -19,7 +19,9 @@ const Project: FC<Props> = ({ project }) => {
   return (
     <li className={classes.project}>
       <div className={classes.image}>
-        <Image src={imagePath} alt={title} width={360} height={300} layout="responsive" />
+        <a href={demo} target="_blank" rel="noreferrer noopener">
+          <Image src={imagePath} alt={title} width={360} height={300} layout="responsive" />
+        </a>
       </div>
       <div className={classes.content}>
         <h3>{title}</h3>
@@ -27,7 +29,7 @@ const Project: FC<Props> = ({ project }) => {
         <div className={classes.links}>
           <div className={classes.demo}>
             <a href={demo} target="_blank" rel="noreferrer noopener">
-              <WebIcon size={50}/>
+              <WebIcon size={50} />
             </a>
           </div>
           <div className={classes.github}>
